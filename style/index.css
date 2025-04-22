@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
+body {
+  background-image: url('/media/background.png');
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-family: 'Pixelify Sans', sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 40px;
+  gap: 40px;
+  justify-content: center;
+  align-items: flex-start;
+  opacity: 0.90;
+}
+
+.profile-links {
+  background-color: #000;
+  border: 0.5px solid hwb(293 6% 8%);
+  padding: 30px;
+  text-align: center;
+  border-radius: 8px;
+  width: 250px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.photo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  height: auto;
+}
+
+.photo-container img {
+  width: 280px;
+  height: 310px;
+  border: 0.5px solid hwb(293 6% 8%);
+  border-radius: 4px;
+}
+
+.photo-container p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.network-links {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.network-links a {
+  text-decoration: none;
+}
+
+.network-links img {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  padding: 20px;
+}
+
+.info-container {
+    width: 1000px;
+    max-width: 100%;
+    height: 480px; /* defina uma altura fixa que funcione bem no seu layout */
+    background-color: #000;
+    padding: 30px;
+    border: 0.5px solid hwb(293 6% 8%);
+    border-radius: 10px;
+    font-size: 20px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    flex-shrink: 0;
+  }
+
+.page-topics {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 10px;
+  gap: 10px;
+}
+
+.page-topics a {
+  text-decoration: none;
+  color: white;
+  letter-spacing: 1px;
+  transition: color 0.5s;
+}
+
+.page-topics a:hover {
+  color: hwb(293 6% 8%);
+}
+
+.apresentation-text p {
+  margin: 10px 0;
+  line-height: 1.5;
+}
+
+.skills-section {
+  margin-top: 20px;
+}
+
+.skills-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 10px;
+  justify-content: center;
+}
+
+.skills-icons img {
+  margin-top: 5px;
+  width: 60px;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.sk_title {
+  font-size: 40px;
+  color: #fff;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .profile-links {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+  }
+
+  .info-container {
+    width: 100%;
+    padding: 20px;
+    font-size: 18px;
+  }
+
+  .network-links img {
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+  }
+
+  .photo-container img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .sk_title {
+    font-size: 50px;
+  }
+
+  .skills-icons img {
+    width: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .info-container {
+    font-size: 16px;
+    padding: 15px;
+  }
+
+  .skills-icons img {
+    width: 40px;
+  }
+  
+  .page-topics {
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+}
